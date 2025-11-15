@@ -1,0 +1,36 @@
+\geometry{a4paper,scale=0.8}
+\setmonofont{Maple Mono}
+\def\thickhline{\noalign{\hrule height.8pt}}
+\renewcommand\thesection{}
+\fancyhead[L]{%
+	2025 CCF 非专业级软件能力认证 CSP-J/S 2025 第二轮认证
+}
+\fancyhead[R]{%
+	入门级 \nouppercase{\leftmark}
+}
+\fancyfoot[C]{
+    第 \thepage 页 \hspace{1em} 共 \pageref{LastPage} 页
+}
+\renewcommand{\arraystretch}{1.5}
+
+\lstset{
+    frame=single,           % 单线边框
+    framesep=2mm,          % 边框与代码间距
+    framerule=0.5pt,         % 边框线粗细
+    rulecolor=\color{blue},% 边框颜色
+    numbers=left,          % 在左侧显示行号
+    numberstyle=\tiny\color{gray}, % 行号样式
+    basicstyle=\ttfamily,  % 基本样式（等宽字体）
+    backgroundcolor=\color{white}, % 背景色
+    breaklines=true,       % 自动换行
+    captionpos=b,          % 标题位置底部
+    keepspaces=true,       % 保持空格
+    showspaces=false,      % 不显示空格标记
+    showstringspaces=false,% 字符串中不显示空格标记
+    showtabs=false,        % 不显示制表符标记
+    tabsize=4,             % 制表符大小
+    language=,             % 不指定语言（纯文本）
+    keywordstyle=\color{blue}, % 关键字样式（如果需要）
+    commentstyle=\color{green}, % 注释样式（如果需要）
+    stringstyle=\color{red}    % 字符串样式（如果需要）
+}

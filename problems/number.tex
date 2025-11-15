@@ -1,0 +1,103 @@
+\newpage
+
+{\centering\section{拼数（number）}}
+
+\subsection*{【题目描述】}
+
+小 R 正在学习字符串处理。小 X 给了小 R 一个字符串 $s$，其中 $s$ 仅包含小写英文字母及数字，且\CJKunderdot{\textbf{包含至少一个 $1 \sim 9$ 中的数字}}。小 X 希望小 R 使用 $s$ 中的任意多个数字，按任意顺序拼成一个正整数。\CJKunderdot{\textbf{注意：小 R 可以选择 $s$ 中相同的数字，但每个数字只能使用一次}}。例如，若 $s$ 为 $\tt 1a01b$，则小 R 可以同时选择第 $1,3,4$ 个字符，分别为 $1,0,1$，拼成正整数 $101$ 或 $110$；但小 R 不能拼成正整数 $111$，因为 $s$ 仅包含两个数字 $1$。
+
+小 R 想知道，在他所有能拼成的正整数中，最大的是多少。你需要帮助小 R 求出他能拼成的正整数的最大值。
+
+\subsection*{【输入格式】}
+
+从文件 \textbf{\textit{number.in}} 中读入数据。
+
+输入的第一行包含一个字符串 $s$，表示小 X 给小 R 的字符串。
+
+\subsection*{【输出格式】}
+
+输出到文件 \textbf{\textit{number.out}} 中。
+
+输出一行一个正整数，表示小 R 能拼成的正整数的最大值。
+
+\subsection*{【样例 1 输入】}
+
+\begin{lstlisting}
+5
+\end{lstlisting}
+
+\subsection*{【样例 1 输出】}
+
+\begin{lstlisting}
+5
+\end{lstlisting}
+
+\subsection*{【样例 1 解释】}
+
+$s$ 仅包含一个数字 5，因此小 R 仅能拼成正整数 5。
+
+\subsection*{【样例 2 输入】}
+
+\begin{lstlisting}
+290es1q0
+\end{lstlisting}
+
+\subsection*{【样例 2 输出】}
+
+\begin{lstlisting}
+92100
+\end{lstlisting}
+
+\subsection*{【样例 2 解释】}
+
+$s$ 包含数字 $2, 9, 0, 1, 0$。可以证明，小 R 拼成的正整数的最大值为 $92100$。
+
+\subsection*{【样例 3】}
+
+见选手目录下的 \textbf{\textit{number/number3.in}} 与 \textbf{\textit{number/number3.ans}}。
+
+该样例满足测试点 $9 \sim 11$ 的约束条件。
+
+\subsection*{【样例 4】}
+
+见选手目录下的 \textbf{\textit{number/number3.in}} 与 \textbf{\textit{number/number3.ans}}。
+
+该样例满足测试点 $20$ 的约束条件。
+
+\subsection*{【数据范围】}
+
+设 $|s|$ 为字符串 $s$ 的长度。对于所有测试数据，保证：
+\begin{itemize}
+    \item $1\leqslant |s| \leqslant 10^6$;
+    \item $s$ 仅包含小写英文字母及数字，且包含至少一个 $1 \sim 9$ 中的数字.
+\end{itemize}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+
+\begin{table}[htbp]
+    \centering
+\begin{tabular}{l|l|l}
+\thickhline
+测试点编号       & $|s|\leqslant$          & 特殊性质               \\ \hline
+1           & 1                       & \multirow{2}{*}{A} \\ \cline{1-2}
+2           & \multirow{2}{*}{2}      &                    \\ \cline{1-1} \cline{3-3} 
+3           &                         & 无                  \\ \hline
+4           & \multirow{2}{*}{10}     & A                  \\ \cline{1-1} \cline{3-3} 
+5,6         &                         & 无                  \\ \hline
+7,8         & \multirow{2}{*}{$10^2$} & A                  \\ \cline{1-1} \cline{3-3} 
+$9\sim 11$  &                         & 无                  \\ \hline
+12          & \multirow{2}{*}{$10^3$} & A                  \\ \cline{1-1} \cline{3-3} 
+13,14       &                         & 无                  \\ \hline
+15          & \multirow{3}{*}{$10^5$} & A                  \\ \cline{1-1} \cline{3-3} 
+16,17       &                         & B                  \\ \cline{1-1} \cline{3-3} 
+18,19       &                         & 无                  \\ \hline
+20          & \multirow{3}{*}{$10^6$} & A                  \\ \cline{1-1} \cline{3-3} 
+21,22       &                         & B                  \\ \cline{1-1} \cline{3-3} 
+$23\sim 25$ &                         & 无                  \\ \thickhline
+\end{tabular}
+\end{table}
+
+特殊性质 A：$s$ 仅包含数字。
+
+特殊性质 B：$s$ 仅包含不超过 $10^3$ 个数字。

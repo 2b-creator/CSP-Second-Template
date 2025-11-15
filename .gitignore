@@ -1,0 +1,53 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.synctex.gz(busy)
+*.nav
+*.snm
+*.vrb
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.dvi
+*.ps
+*.xdv
+
+# minted / pygments caches
+_minted-*/
+*.pyg
+
+# latexmk and texlive auxiliary files
+*.run.xml
+
+# editor/OS files
+*~
+.*.swp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# build directories
+build/
+_build/
+out/
+
+# backup files
+*.bak
+*.backup
+*.tmp
+
+# Keep PDFs in the repository
+main.*
+!*.pdf

@@ -1,0 +1,78 @@
+\documentclass{article}
+\input{bits/stdlatex} % 万能头（
+\input{configure.tex}
+
+\begin{document}
+    \pagestyle{empty}
+	\begin{spacing}{0.5}
+        \begin{center}
+        {\bf \huge 2025 CCF 非专业级软件能力认证}
+
+        \vspace{1em}
+
+        {\huge CSP-J/S 2025 第二轮认证}
+
+        \vspace{1em}
+
+        {\huge \emph{入门级}}
+
+        \vspace{1em}
+
+        {\large 时间：2025 年 11 月 1 日 08:30 $\sim$ 12:00}
+    \end{center}
+
+    \begin{table}[h]
+        \begin{tabularx}{\textwidth}{|p{0.2\textwidth}|X|X|X|X|}
+            \hline
+题目名称    & 拼数                  & 座位                & 异或和              & 多边形                  \\ \hline
+题目类型    & 传统型                 & 传统型               & 传统型              & 传统型                  \\ \hline
+目录      & \texttt{number}     & \texttt{seat}     & \texttt{xor}     & \texttt{polygon}     \\ \hline
+可执行文件名  & \texttt{number}     & \texttt{seat}     & \texttt{xor}     & \texttt{polygon}     \\ \hline
+输入文件名   & \texttt{number.in}  & \texttt{seat.in}  & \texttt{xor.in}  & \texttt{polygon.in}  \\ \hline
+输出文件名   & \texttt{number.out} & \texttt{seat.out} & \texttt{xor.out} & \texttt{polygon.out} \\ \hline
+每个测试点时限 & 1.0 秒               & 1.0 秒             & 1.0 秒            & 1.0 秒                \\ \hline
+内存限制    & 512 MiB             & 512 MiB           & 512 MiB          & 512 MiB              \\ \hline
+测试点数目   & 25                  & 20                & 20               & 25                   \\ \hline
+测试点是否等分 & 是                   & 是                 & 是                & 是                    \\ \hline
+        \end{tabularx}
+    \end{table}
+
+    提交源程序文件名
+
+    \begin{table}[h]
+        \begin{tabularx}{\textwidth}{|p{0.2\textwidth}|X|X|X|X|}
+            \hline
+对于 C++ 语言 & \texttt{number.cpp} & \texttt{seat.cpp} & \texttt{xor.cpp} & \texttt{polygon.cpp} \\ \hline
+        \end{tabularx}
+    \end{table}
+
+    编译选项
+
+    \begin{table}[h] 
+        \begin{tabularx}{\textwidth}{|p{0.2\textwidth}|>{\centering\arraybackslash}X|}
+             \hline
+              对于 C++ 语言 & {\texttt{-O2 -std=c++14 -static}} \\ \hline 
+        \end{tabularx} 
+    \end{table}
+
+    \CJKunderdot{\textbf{注意事项（请仔细阅读）}}
+
+    \begin{enumerate}
+        \item 文件名（程序名和输入输出文件名）必须使用英文小写。
+        \item \texttt{main} 函数的返回值类型必须是 \texttt{int}，程序正常结束时的返回值必须是 0。
+        \item 若无特殊说明，结果的比较方式为全文比较（过滤行末空格及文末换行）。
+        \item 选手提交的程序源文件大小不得超过 100 KiB。
+        \item 提交的程序源文件的放置位置请参考各省的具体要求。
+        \item 程序可使用的栈空间内存限制与题目的内存限制一致。
+        \item 禁止在源代码中改变编译器参数（如使用 \texttt{\#pragma} 命令），禁止使用系统结构相关指令（如内联汇编）或其他可能造成不公平的方法。
+        \item 因违反上述规定而出现的问题，申诉时一律不予受理。
+        \item 只提供 Linux 格式附加样例文件。
+        \item 全国统一评测时采用的机器配置为：Intel Core Ultra 9 285K CPU @ 3.70 GHz（关闭睿频与能效核），内存 96 GB。上述时限以此配置为准。
+        \item 评测在当前最新公布的 NOI Linux 下进行，各语言的编译器版本以此为准。
+    \end{enumerate}
+    \end{spacing}
+    \clearpage
+    \pagestyle{fancy}
+
+    \input{problems/number.tex}
+\end{document}

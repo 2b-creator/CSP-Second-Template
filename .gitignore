@@ -51,3 +51,4 @@ out/
 # Keep PDFs in the repository
 main.*
 !*.pdf
+!*.tex
